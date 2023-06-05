@@ -1,0 +1,104 @@
+body{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    place-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #f7f7f7
+}
+
+header{
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    height: 80px;
+    background-color: #cccccc;
+    text-decoration: none;
+
+}
+
+.home{
+    display: grid;
+    place-content: center;
+    text-decoration: none;
+    
+}
+
+.home button{
+    text-decoration: none;
+    background-color: rgb(240, 10, 10);
+    border-radius: 4px;
+    margin: 0 20px;
+}
+
+.home button:hover{
+    background-color: blue;
+    color: #cccccc;
+}
+
+.ancora{
+    display: flex;
+    align-items: center;
+    place-content: center;
+    gap: 20px;
+}
+
+.ancora button{
+    text-decoration: none;
+    background-color: rgb(238, 0, 0);
+    border-radius: 4px;
+}
+
+.ancora button:hover{
+    background-color: blue;
+    color: #cccccc;
+}
+
+.txt{
+    display: grid;
+    grid-template-columns: 10fr 1fr;
+
+}
+
+.t1{
+    color: red;
+    place-self: center;
+    place-self: end;
+    margin-bottom: 16px;
+}
+
+.t1:hover{
+    background-color: blue;
+    color: black;
+}
+
+.txt1{
+    display: grid;
+    grid-template-columns: 10fr 1fr;
+    background-color: #efefef;
+}
+
+.t2{
+    max-width: 120px;
+    place-self: center;
+}
+
+.skill{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: purple;
+    background-color: #202020;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    background-color: #9468E6;
+}
+
+.symbols{
+    color: black;
+}
