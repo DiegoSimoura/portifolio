@@ -3,14 +3,16 @@ body{
     padding: 0;
     box-sizing: border-box;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: #f7f7f7
+    font-weight: bold;
+    background-color: #f7f7f7;
 }
 
 header{
     display: grid;
     grid-template-columns: 1fr 10fr;
-    height: 5em;
+    height: 3.75em;
     background-color: #cccccc;
+    border-radius: 0.3em;
     text-decoration: none;
 }
 
@@ -44,7 +46,7 @@ header{
 .ancora button{
     text-decoration: none;
     background-color: rgb(238, 0, 0);
-    border-radius: 4px;
+    border-radius: 0.3em;
     padding: 0.5em;
 }
 
@@ -53,21 +55,22 @@ header{
     color: #cccccc;
 }
 
-main{
-    
-}
-
 .txt{
     display: grid;
-    grid-template-columns: 10fr 1fr;
+    grid-template-columns: 2fr 1fr;
     height: 15em;
+}
 
+.tp{
+    place-self: center;
+    justify-self: end;
+    width: 30em;
 }
 
 .t1{
     color: red;
-    place-self: center;
     place-self: end;
+    justify-self: start;
     padding: 1em;
     margin-bottom: 16px;
 }
@@ -79,8 +82,16 @@ main{
 
 .txt1{
     display: grid;
-    grid-template-columns: 10fr 1fr;
+    grid-template-columns: 3fr 1fr;
     background-color: #efefef;
+    width: 90em;
+    height: 15em;
+}
+
+.tp1{
+    place-self: center;
+    justify-self: end;
+    width: 30em;
 }
 
 .t2{
@@ -92,8 +103,9 @@ main{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     color: purple;
-    height: 40em;
+    height: 15em;
     background-color: #202020;
+    border-radius: 0.4;
 }
 
 .s1{
@@ -108,9 +120,14 @@ main{
     place-self: center;
 }
 
+.skillH2{
+    grid-column: 1 / span 2;
+    place-self: center;
+}
 .s1a{
     grid-column-start: 1; 
     list-style-type: none;
+    
 }
 
 .s1b{
@@ -118,21 +135,12 @@ main{
     list-style-type: none;
 }
 
-.skillTxt1{
-    grid-column: 1 / span 2;
-    place-self: center;
-}
-
-.skillTxt2{
-    grid-column: 1 / span 2;
-    place-self: center;
-}
-
 footer{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(2,1fr);
     background-color: #9468E6;
+    background-repeat: repeat-y;
 }
 
 .symbols{
@@ -143,13 +151,13 @@ footer{
     size: 2em;
 }
 
-.symbols li{
+.symbols img{
     display: inline;
     list-style-type: none;
     padding-right: 10px;
 }
 
-.footDetail{
+.footDesigner{
     max-width: 200px;
     place-self: center;
 
@@ -160,13 +168,14 @@ footer{
     grid-column: 3 /span 3;
     grid-row: 1 / span 2;
     list-style: none;
+    color:#DDDDDD;
 }
 
 .symbols1{
     justify-self: center;
 }
 
-.footDetail1{
+.copyRight{
     align-self: end;
     justify-self: center;
 }
