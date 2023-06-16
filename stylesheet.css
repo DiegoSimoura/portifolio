@@ -158,7 +158,7 @@ header{
     list-style-type: none;
     margin: 0;
     border: 0;
-    
+    width: max-content;
 }
 
 .s1b{
@@ -166,6 +166,7 @@ header{
     list-style-type: none;
     margin: 0;
     border: 0;
+    width: max-content;
 }
 
 footer{
