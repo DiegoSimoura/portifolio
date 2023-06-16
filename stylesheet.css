@@ -145,6 +145,7 @@ header{
     grid-column: 3;
     grid-row: 2;
     place-self: center;
+    max-height: fit-content;
     color: #C4A5FD;
 }
 
@@ -230,9 +231,10 @@ footer{
 }
 
 .copyRight{
-    align-self: end;
     place-self: center;
-    grid-column-start: 2;
-    grid-row-start: 4;
+    justify-self: center;
+    grid-column: 1/span 3;
+    grid-row-start: 3;
     margin-top: 2em;
+    color: #cccccc;
 }
