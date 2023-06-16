@@ -9,66 +9,62 @@ body{
 
 header{
     display: grid;
-    grid-template-columns: 1fr 10fr;
-    height: 3.75em;
+    grid-template-columns: repeat(4,1fr);
+    height: 7em;
+    padding: 0 5.5em;
     background-color: #cccccc;
-    border-radius: 0.3em;
-    text-decoration: none;
+    max-width: 100%;
+    place-content: center;
 }
 
 .home{
-    display: grid;
-    place-content: center;
-    text-decoration: none;
-    
+    display: inline;
+    place-self: center;
+    justify-self: start;
+    grid-column-start: 1;
+    width: max-content;
 }
 
-.home button{
+.home a{
     text-decoration: none;
-    background-color: rgb(240, 10, 10);
-    padding: 0.5em;
-    border-radius: 4px;
-    margin: 0 20px;
-}
-
-.home button:hover{
-    background-color: blue;
-    color: #cccccc;
+    color: #202020;
+    width: fit-content;
 }
 
 .ancora{
-    display: flex;
-    align-items: center;
-    place-content: center;
-    gap: 20px;
+    display: inline;
+    place-self: center;
+    grid-column: 3;
+    grid-row: 1;
+    width: max-content;
 }
 
-.ancora button{
+.ancora a{
     text-decoration: none;
-    background-color: rgb(238, 0, 0);
-    border-radius: 0.3em;
-    padding: 0.5em;
-}
-
-.ancora button:hover{
-    background-color: blue;
-    color: #cccccc;
+    padding: 1em;
+    margin: 0.1em;
+    color: #202020;
+    width: fit-content;
 }
 
 .txt{
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    height: 15em;
+    grid-template-columns: repeat(4,1fr);
+    height: 40em;
+    padding: 1.2em 5.5em;
 }
 
 .tp{
+    grid-column: 1 /span 2;
     place-self: center;
-    justify-self: end;
-    width: 30em;
+    justify-self: start;
+    font-size: 1.5em;
 }
 
 .t1{
     color: red;
+    grid-column-start: 3;
+    grid-row: 2;
     place-self: end;
     justify-self: start;
     padding: 1em;
@@ -82,100 +78,160 @@ header{
 
 .txt1{
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 1fr 10fr;
     background-color: #efefef;
-    width: 90em;
-    height: 15em;
+    height: 40em;
+    background-attachment: fixed;
+    padding: 1.2em 5.5em;
+}
+
+.title{
+    grid-column: 1 /span 4;
+    grid-row: 1;
+    place-self: center;
+}
+
+.content{
+    display: inline;
+    writing-mode: vertical-rl;
+    place-self: center;
 }
 
 .tp1{
+    grid-row-start: 2;
+    grid-column: 1 /span 2;
     place-self: center;
-    justify-self: end;
-    width: 30em;
+    justify-self: center;
+    font-size: 1.5em;
 }
 
-.t2{
-    max-width: 120px;
+.pic{
+    object-fit: cover;
+    width: max-content;
+    height: 30em;
     place-self: center;
+    grid-column: 3/span 4;
 }
+
+
 
 .skill{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    color: purple;
-    height: 15em;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 1fr 10fr;
+    color: #f7f7f7;
+    height: 40em;
     background-color: #202020;
     border-radius: 0.4;
+    padding: 1.2em 5.5em;
 }
+
+
 
 .s1{
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    grid-column: 2;
+    grid-row: 2;
     place-self: center;
+    max-height: fit-content;
+    color: #C4A5FD;
 }
 
 .s2{
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    grid-column: 3;
+    grid-row: 2;
     place-self: center;
+    color: #C4A5FD;
 }
 
 .skillH2{
     grid-column: 1 / span 2;
     place-self: center;
+    color: #f7f7f7;
 }
 .s1a{
     grid-column-start: 1; 
     list-style-type: none;
+    margin: 0;
+    border: 0;
     
 }
 
 .s1b{
     grid-column-start: 2;
     list-style-type: none;
+    margin: 0;
+    border: 0;
 }
 
 footer{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(2,1fr);
-    background-color: #9468E6;
-    background-repeat: repeat-y;
+    background-color: #6441A5;
+    padding: 1.2em 5.5em;
 }
 
 .symbols{
-    place-self: center;
-    padding: 0;
-    margin: 0;
-    gap: 10px;
-    size: 2em;
+    display: inline-flex;
+    place-self: end;
+    justify-self: center;
+    margin: -1em;
 }
 
-.symbols img{
-    display: inline;
+.symbols ul{
+    display: inline-flex;
     list-style-type: none;
-    padding-right: 10px;
+    padding-right: 0.5em;
+    margin: 1em 0;
+    gap: 1em;
 }
 
 .footDesigner{
-    max-width: 200px;
+    max-width: 20em;
     place-self: center;
-
+    justify-self: center;
+    grid-row: 2 span/ 3;
+    grid-column: 2;
 }
 
 .inf{
+    display: grid;
     place-self: center;
     grid-column: 3 /span 3;
     grid-row: 1 / span 2;
     list-style: none;
-    color:#DDDDDD;
+    color: #cccccc;
+}
+
+.inf0{
+    padding: 0;
+}
+
+.inf1{
+    margin: 0;
 }
 
 .symbols1{
-    justify-self: center;
+    place-self: center;
+    align-self: start;
+    grid-row:2;
+    margin-top: 1em;
+}
+
+.icon{
+    grid-row: 2;
+    grid-column: 2;
 }
 
 .copyRight{
     align-self: end;
-    justify-self: center;
+    place-self: center;
+    grid-column-start: 2;
+    grid-row-start: 4;
+    margin-top: 2em;
 }
