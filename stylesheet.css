@@ -10,19 +10,20 @@ body{
 header{
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    height: 7em;
+    height: 6em;
     padding: 0 5.5em;
-    background-color: #cccccc;
+    background-color: #C4A5FD;
     max-width: 100%;
     place-content: center;
 }
 
 .home{
-    display: inline;
+    display: grid;
     place-self: center;
     justify-self: start;
     grid-column-start: 1;
     width: max-content;
+    
 }
 
 .home a{
@@ -31,8 +32,12 @@ header{
     width: fit-content;
 }
 
+.home a:hover{
+    color: red;
+}
+
 .ancora{
-    display: inline;
+    display: flex;
     place-self: center;
     grid-column: 3;
     grid-row: 1;
@@ -45,6 +50,10 @@ header{
     margin: 0.1em;
     color: #202020;
     width: fit-content;
+}
+
+.ancora a:hover{
+    color: red;
 }
 
 .txt{
@@ -61,51 +70,6 @@ header{
     font-size: 1.5em;
 }
 
-.t1{
-    color: red;
-    grid-column-start: 3;
-    grid-row: 2;
-    place-self: end;
-    justify-self: start;
-    padding: 1em;
-    margin-bottom: 16px;
-}
-
-.t1:hover{
-    background-color: blue;
-    color: black;
-}
-
-.txt1{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: 1fr 10fr;
-    background-color: #efefef;
-    height: 40em;
-    background-attachment: fixed;
-    padding: 1.2em 5.5em;
-}
-
-.title{
-    grid-column: 1 /span 4;
-    grid-row: 1;
-    place-self: center;
-}
-
-.content{
-    display: inline;
-    writing-mode: vertical-rl;
-    place-self: center;
-}
-
-.tp1{
-    grid-row-start: 2;
-    grid-column: 1 /span 2;
-    place-self: center;
-    justify-self: center;
-    font-size: 1.5em;
-}
-
 .pic{
     object-fit: cover;
     width: max-content;
@@ -114,6 +78,74 @@ header{
     grid-column: 3/span 4;
 }
 
+.txt1{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    background-color: #efefef;
+    height: 40em;
+    padding: 1.2em 5.5em;
+}
+
+.tp1{
+    grid-column: 1 /span 2;
+    place-self: center;
+    justify-self: start;
+    font-size: 1.5em;
+}
+
+.pic2{
+    display: grid;
+    place-content: center;
+    grid-column: 3 /span 4;
+    grid-row: 2;
+}
+
+.pic2 img{
+    object-fit: cover;
+    width: 15em;
+    margin: 0.5em;
+}
+
+.picA{
+    grid-column: 1;
+}
+
+.picB{
+    grid-column: 2;
+}
+
+.pic2 img:hover{
+    position: absolute;
+    place-self: center;
+    grid-column: 3/span 4;
+    padding: 2em;
+    width: 25em;
+}
+
+.txt2{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 1fr 10fr;
+    height: 40em;
+    padding: 1.2em 5.5em;
+    place-content: center;
+}
+
+.txt2 img{
+    max-width: 20em;
+    place-self: center;
+}
+
+.pr1{
+    display: block;
+    place-self: center;
+}
+
+.title{
+    grid-column: 1 /span 4;     /*this div controls all three titles in MAIN*/
+    grid-row: 1;
+    place-self: center;
+}
 
 
 .skill{
@@ -131,20 +163,20 @@ header{
 
 .s1{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-column: 2;
+    grid-column: 1 /span 2;
     grid-row: 2;
     place-self: center;
+    align-self: start;
     max-height: fit-content;
     color: #C4A5FD;
 }
 
 .s2{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-column: 3;
+    grid-column: 3 /span 4;
     grid-row: 2;
     place-self: center;
+    align-self: start;
     max-height: fit-content;
     color: #C4A5FD;
 }
@@ -153,20 +185,23 @@ header{
     grid-column: 1 / span 2;
     place-self: center;
     color: #f7f7f7;
+    padding: 1em;
 }
 .s1a{
     grid-column-start: 1; 
     list-style-type: none;
-    margin: 0;
+    margin: -1em;
     border: 0;
+    padding: 2em;
     width: max-content;
 }
 
 .s1b{
     grid-column-start: 2;
     list-style-type: none;
-    margin: 0;
+    margin: -1em;
     border: 0;
+    padding: 2em;
     width: max-content;
 }
 
