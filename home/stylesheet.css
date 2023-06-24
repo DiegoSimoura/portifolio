@@ -7,6 +7,27 @@ body{
     background-color: #f7f7f7;
 }
 
+#myBtn{
+    display: none;
+    position: fixed;
+    bottom: 1.2em;
+    right: 1.9em;
+    z-index: 10;
+    border: none;
+    outline: none;
+    background-color: blueviolet;
+    color: #cccccc;
+    cursor: pointer;
+    padding: 1em;
+    border-radius: 0.6em;
+    font-size: 1.1em;
+}
+
+#myBtn:hover{
+    background-color: rgb(228, 0, 178);
+}
+
+
 header{
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -99,14 +120,14 @@ header{
     font-size: 1.5em;
 }
 
-.pic2{
+.pic1{
     display: grid;
     place-content: center;
     grid-column: 3 /span 4;
     grid-row: 2;
 }
 
-.pic2 img{
+.pic1 img{
     object-fit: cover;
     width: 15em;
     margin: 0.5em;
@@ -120,7 +141,7 @@ header{
     grid-column: 2;
 }
 
-.pic2 img:hover{
+.pic1 img:hover{
     position: absolute;
     place-self: center;
     grid-column: 3/span 4;
@@ -244,21 +265,6 @@ footer{
     padding: 1.2em 5.5em;
 }
 
-.symbols{
-    display: inline-flex;
-    place-self: end;
-    justify-self: center;
-    margin: -1em;
-}
-
-.symbols ul{
-    display: inline-flex;
-    list-style-type: none;
-    padding-right: 0.5em;
-    margin: 1em 0;
-    gap: 1em;
-}
-
 .footDesigner{
     max-width: 20em;
     place-self: center;
@@ -272,11 +278,6 @@ footer{
     align-self: start;
     grid-row:2;
     margin-top: 1em;
-}
-
-.icon{
-    grid-row: 2;
-    grid-column: 2;
 }
 
 .copyRight{
