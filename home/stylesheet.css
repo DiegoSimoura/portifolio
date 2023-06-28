@@ -10,15 +10,15 @@ body{
 #myBtn{
     display: none;
     position: fixed;
-    bottom: 1.2em;
-    right: 1.9em;
+    bottom: 12em;
+    right: 0.5em;
     z-index: 10;
     border: none;
     outline: none;
     background-color: blueviolet;
     color: #cccccc;
     cursor: pointer;
-    padding: 1em;
+    padding: 1.5em;
     border-radius: 0.6em;
     font-size: 1.1em;
 }
@@ -57,7 +57,18 @@ header{
     color: red;
 }
 
-.ancora{
+.contact {
+    text-decoration: none;
+    place-self: center;
+}
+
+.contact a{
+    text-decoration: none;
+    place-self: center;
+    color: #202020;
+}
+
+.anchor{
     display: flex;
     place-self: center;
     grid-column: 3;
@@ -65,7 +76,7 @@ header{
     width: max-content;
 }
 
-.ancora a{
+.anchor a{
     text-decoration: none;
     padding: 1em;
     margin: 0.1em;
@@ -73,7 +84,20 @@ header{
     width: fit-content;
 }
 
-.ancora a:hover{
+.anchor a:hover{
+    color: red;
+}
+
+.menu{
+    justify-self: end;
+    align-self: center;
+}
+
+.menu a{
+    font-weight:bolder;
+}
+
+.menu a:hover{
     color: red;
 }
 
@@ -103,11 +127,13 @@ header{
     grid-column: 1 /span 4;
     grid-row: 1;
     place-self: center;
+    align-self: start;
 }
 
 .txt1{
     display: grid;
     grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 1fr 8fr;
     background-color: #efefef;
     height: 40em;
     padding: 1.2em 5.5em;
@@ -121,33 +147,69 @@ header{
 }
 
 .pic1{
-    display: grid;
+    display: flex;
+    flex-direction: row;
     place-content: center;
     grid-column: 3 /span 4;
     grid-row: 2;
 }
 
 .pic1 img{
+    opacity: 0.8;
     object-fit: cover;
-    width: 15em;
+    width: 8em;
+    height: 8em;
     margin: 0.5em;
+}
+
+.pic1 img:hover{
+    opacity: 1;
+}
+
+.pic1:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container {
+    position: absolute;
+    display: block;
+    place-self: end;
+    max-width: 25em;
+    right: 15em;
+}
+
+#backGround{
+    max-width: 25em;
 }
 
 .picA{
     grid-column: 1;
+    cursor: pointer;
 }
 
 .picB{
     grid-column: 2;
+    cursor: pointer;
 }
 
-.pic1 img:hover{
+#imgText{
     position: absolute;
-    place-self: center;
-    grid-column: 3/span 4;
-    padding: 2em;
-    width: 25em;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
 }
+
+.closeBtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+  }
 
 .txt2{
     display: grid;
@@ -207,7 +269,7 @@ header{
     color: #f7f7f7;
     height: 40em;
     background-color: #202020;
-    border-radius: 0.4;
+
     padding: 1.2em 5.5em;
 }
 

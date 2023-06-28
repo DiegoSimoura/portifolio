@@ -5,7 +5,7 @@ window.addEventListener('scroll', () => {
 });
 
 function topFunction() {
-  scrollToTop(500); // Define a duração da animação em milissegundos
+  scrollToTop(500);
 }
 
 function scrollToTop(duration) {
@@ -21,5 +21,21 @@ function scrollToTop(duration) {
     if (time < duration) {
       window.requestAnimationFrame(step);
     }
+  });
+}
+
+
+function photo(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgText");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+  const background =document.getElementById(".backGround");
+  background.forEach(background=>{
+    background.addEventListener("click",()=>{
+      background.forEach(p=> p.classList.display(expandImg));
+      background.classList.add("backGround");
+    });
   });
 }
