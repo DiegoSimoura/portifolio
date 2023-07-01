@@ -24,18 +24,17 @@ function scrollToTop(duration) {
   });
 }
 
+let slideIndex = 0;
+showSlides();
 
-function photo(imgs) {
-  var expandImg = document.getElementById("expandedImg");
-  var imgText = document.getElementById("imgText");
-  expandImg.src = imgs.src;
-  imgText.innerHTML = imgs.alt;
-  expandImg.parentElement.style.display = "block";
-  const background =document.getElementById(".backGround");
-  background.forEach(background=>{
-    background.addEventListener("click",()=>{
-      background.forEach(p=> p.classList.display(expandImg));
-      background.classList.add("backGround");
-    });
-  });
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("slides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 3500);
 }

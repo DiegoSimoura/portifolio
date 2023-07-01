@@ -36,53 +36,62 @@
             <img class="pic" src="/home/img/perfil.png" alt="">
         </div>
         <div id="about" class="txt1">
-            <h1 class="title">About Me</h1>
+            <h1 class="title">ABOUT ME</h1>
             <p class="tp1">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ante eget metus auctor fringilla.
                 Nullam vitae ligula id neque malesuada cursus. 
                 Proin sit amet justo elit. Nulla consequat est sit amet libero scelerisque, ut sollicitudin sapien consequat.
                 Aliquam erat volutpat. Fusce ultrices lacinia dolor, eu tincidunt erat bibendum a.
             </p>
-            <div id="pic1" class="pic1">
-               <img class="picA"src="/home/img/facepic.png" alt="Facebook Partner" onclick="photo(this)">
-               <img class="picB"src="/home/img/twitch.jpg" alt="Twitch Partner"onclick="photo(this)">
-               <img class="picA"src="/home/img/cat.jpg" alt="Profile"onclick="photo(this)">
-               <img class="picB"src="/home/img/pubg.jpg" alt="PUBG Event"onclick="photo(this)">
+            <div class="slideshow-container">
+                <div class="slides fade">
+                  <img src="/home/img/twitch.jpg" style="width:100%">
+                  <div class="text">TWITCH PARTNER 2017</div>
+                </div>
+              
+                <div class="slides fade">
+                  <img src="/home/img/pubg.jpg" style="width:100%">
+                  <div class="text">PUBG PARTNER 2018</div>
+                </div>
+              
+                <div class="slides fade">
+                  <img src="/home/img/facebookPartner.jpg" style="width:100%">
+                  <div class="text">FACEBOOK PARTNER 2019</div>
+                </div>
+
+                <div class="slides fade">
+                    <img src="/home/img/cat.jpg" style="width:100%">
+                    <div class="text">HAPPY DEV 2023</div>
+                </div>
             </div>
-            <div class="container">
-                <span onclick="this.parentElement.style.display='none'" class="closeBtn">&times;</span>
-                <img id="expandedImg" style="width:100%">
-                <div id="imgText"></div>
-                <img id="backGround" src="/home/img/sunishining.jpg" alt="BG" >
-              </div>
         </div>
-        <div id="project" class="txt2">
-            <h1 class="title">Projects</h1>
-            <div class="pr1">
+        <div class="conteiner3">
+            <h1 class="title">PROJECTS</h1>
+            <div>
                 <img src="/home/test/Group 1.png" alt="">
             </div>
-            <div class="pr2">
+            <div>
                 <img src="/home/test/Group 2.png" alt="">
             </div>
-            <div class="pr3">
+            <div>
                 <img src="/home/test/Group 3.png" alt="">
             </div>
-            <div class="pr4">
+            <div>
                 <img src="/home/test/Group 4.png" alt="">
             </div>
-            <div class="demo1">
+            <div class="demo">
                 <a href="/projetoAI/index.html">Live Demo</a>
                 <a href="https://github.com/DiegoSimoura/selfDriveCar" target="_blank">Source Code</a>
             </div>
-            <div class="demo2">
+            <div class="demo">
                 <a href="">Live Demo</a>
                 <a href="">Source Code</a>
             </div>
-            <div class="demo3">
+            <div class="demo">
                 <a href="">Live Demo</a>
                 <a href="">Source Code</a>
             </div>
-            <div class="demo4">
+            <div class="demo">
                 <a href="">Live Demo</a>
                 <a href="">Source Code</a>
             </div>
@@ -121,11 +130,15 @@
                     <p>Team Player</p>
                 </ul>
             </div>
+            <div class="webDesigner">
+                <img src="/home/img/detalheFooter.svg" alt="">
+            </div>
         </div>
     </main>
-    <footer id="footer">
-        <img class="footDesigner"src="/home/img/detalheFooter.svg" alt="">
-        <p class="copyRight">© CopyRight 2023 DiegoSimoura. All Rights Reserved.</p>
+    <footer>
+        <div class="copyRight">
+            <p>© CopyRight 2023 DiegoSimoura. All Rights Reserved.</p>
+        </div>
     </footer>
     <script src="functions.js"></script>
 </body>
