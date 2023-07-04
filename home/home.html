@@ -10,21 +10,33 @@
 </head>
 <body>
     <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-    <nav>
+    <nav id="menuDesktop">
          <div class="home">
             <a href="/home/home.html">HOME</a>
         </div>
         <div class="contact">
-            <a href="#footer">contact</a>
+            <a href="#">contact</a>
         </div>
         <div class="anchor">
-            <a href="#about">About Me</a>
+            <a href="#txt1">About Me</a>
             <a href="#container3">Projects</a>
             <a href="#skill">Skills</a>
         </div>
     </nav>
+    <div class="mobNav">
+        <a href="/home/home.html" class="active">Home</a>
+        <div id="myMenu">
+          <a href="#">Contact</a>
+          <a href="#txt1">About Me</a>
+          <a href="#container3">Projects</a>
+          <a href="#skill">Skills</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="mobileTab()">
+          <i class="material-symbols-rounded">Menu</i>
+        </a>
+    </div>
     <main>
-        <div class="txt" >
+        <div  class="txt" >
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ante eget metus auctor fringilla.
                 Nullam vitae ligula id neque malesuada cursus. 
                 Proin sit amet justo elit. Nulla consequat est sit amet libero scelerisque, ut sollicitudin sapien consequat.
@@ -73,7 +85,7 @@
             </div>
             <div class="calado1">
                 <img src="/home/test/Group 2.png" alt="">
-                <div>
+                <div class="testeee">
                     <a href="#">Live Demo</a>
                     <a href="#">Source Code</a>
                 </div>
@@ -100,31 +112,27 @@
             <div class="skillContainer">
                 <h2>HARD SKILLS</h2>
                 <ul>
-                    <p>HTML</p>
-                    <p>Css3</p>
-                    <p>UI/UX</p>
                     <p>GIT</p>
-                </ul>
-                <ul>
-                    <p>Javascript</p>
-                    <p>React</p>
-                    <p>Next.js</p>
-                    <p>Node.JS</p>
+                    <p>HTML</p>
+                    <p>CSS3</p>
+                    <p>UI/UX</p>
+                    <p>REACT</p>
+                    <p>NEXT.JS</p>
+                    <p>NODE.JS</p>
+                    <p>JAVASCRIPT</p>
                 </ul>
             </div>
-            <div class="skillContainer2">
+            <div class="skillContainer1">
                 <h2>SOFT SKILLS</h2>
                 <ul>
-                    <p>Time Management</p>
+                    <p>Team Player</p>
+                    <p>Flexible Person</p>
+                    <p>Communication</p>
                     <p>Problem Solving</p>
                     <p>Learning Passion</p>
-                    <p>Flexible Person</p>
-                </ul>
-                <ul>
-                    <p>Communication</p>
-                    <p>Knowledge Sharing</p>
                     <p>Think as End User</p>
-                    <p>Team Player</p>
+                    <p>Time Management</p>
+                    <p>Knowledge Sharing</p>
                 </ul>
             </div>
             <div class="webDesigner">
@@ -133,9 +141,7 @@
         </div>
     </main>
     <footer>
-        <div class="copyRight">
             <p>© CopyRight 2023 DiegoSimoura. All Rights Reserved.</p>
-        </div>
     </footer>
     <script src="functions.js"></script>
 </body>

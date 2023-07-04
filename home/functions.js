@@ -41,7 +41,7 @@ function showSlides() {
 
 
 function mobileTab() {
-  var x = document.getElementById("mobileLinks");
+  var x = document.getElementById("myMenu");
   if (x.style.display === "block") {
     x.style.display = "none";
   } else {
