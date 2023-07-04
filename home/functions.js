@@ -38,3 +38,13 @@ function showSlides() {
   slides[slideIndex-1].style.display = "block";
   setTimeout(showSlides, 3500);
 }
+
+
+function mobileTab() {
+  var x = document.getElementById("mobileLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}

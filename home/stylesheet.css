@@ -30,11 +30,11 @@ body{
 }
 
 
-header{
+nav{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     height: 6em;
-    padding: 0 5.5em;
+    padding: 0 5%;
     background-color: #C4A5FD;
     max-width: 100%;
     place-content: center;
@@ -90,43 +90,25 @@ header{
     color: red;
 }
 
-.menu{
-    justify-self: end;
-    align-self: center;
-}
-
-.menu a{
-    font-weight:bolder;
-}
-
-.menu a:hover{
-    color: red;
-}
-
-main{
-    max-width: auto;
-    height: auto;
-}
-
 .txt{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     height: 100%;
     width: auto;
     max-width: 100%;
-    padding: 1em 5.5em;
+    padding: 1% 5%;
 }
 
-.tp{
+.txt p{
     grid-column: 1 /span 2;
     place-self: center;
     justify-self: start;
     font-size: 1.5em;
 }
 
-.pic{
+.txt img{
     width: 100%;
-    max-width: 40em;
+    max-width: 32em;
     height: auto;
     place-self: center;
     border-radius: 1em;
@@ -137,19 +119,19 @@ main{
     grid-column: 1 /span 4;
     grid-row: 1;
     place-self: center;
-    align-self: start;
 }
 
 .txt1{
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: 1fr 8fr;
+    grid-template-rows: auto;
     background-color: #efefef;
     height: auto;
-    padding: 1em 5.5em;
+    max-width: 100%;
+    padding: 1% 5%;
 }
 
-.tp1{
+.txt1 p{
     grid-column: 1 /span 2;
     place-self: center;
     justify-self: start;
@@ -161,17 +143,18 @@ main{
     width: 100%;
     position: relative;
     margin: auto;
+    margin-bottom: 1.5em;
     grid-column: 3 /span 4;
   }
 
   .slideshow-container img{
     border-radius: 1em;
+    display: block;
   }
   
   .text {
     color: #000000;
-    font-size: 1em;
-    padding: 8px 12px;
+    font-size: 1.2em;
     position: absolute;
     width: 100%;
     text-align: center;
@@ -191,118 +174,93 @@ main{
     to {opacity: 1}
   }
 
-
-.conteiner3{
+.container3{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr auto 1fr;
+    grid-template-rows: auto auto;
     height: auto;
-    max-width: 100%;
-    padding: 1em 5.5em;
-
+    padding: 1% 5%;
+    place-items: center;
 }
 
-.conteiner3 a{
+.container3 a{
     display: inline-flex;
     text-decoration: none;
     background-color: #202020;
     color: #efefef;
-    padding: 0.5em 1.5em;
     border-radius: 1em;
-    height: auto;
-    margin-top: 0.5em;
+    padding: 0.5em 1em;
+    margin: 0.1em;
     justify-self: center;
+    max-width: 100%;
+    height: auto;
 }
 
-.conteiner3 img{
-    max-width: 90%;
+.container3 img{
+    width: 18em;
+    max-width: 100%;
+    height: auto;
     border-radius: 1em;
-    height: auto;
-    margin-left: 1em;
-}
-
-.demo{
-    grid-row-start: 3;
-    place-self: center;
-    margin-left: 1em;
-    max-width: max-content;
-    height: auto;
+    justify-self: center;
 }
 
 .skill{
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: 1fr auto 1fr;
+    grid-template-rows: auto;
     color: #f7f7f7;
     height: auto;
     max-width: 100%;
     background-color: #202020;
-    padding: 1em 5.5em;
+    padding: 1% 5%;
 }
 
+.skill ul, h2{
+  margin: 0 1em;
+  padding: 0;
+  justify-self: center;
+  color: #f7f7f7;
+}
 
-
-.s1{
+.skillContainer{
     display: grid;
-    grid-column: 1 /span 2;
+    grid-column: 2;
     grid-row: 2;
-    place-self: center;
-    align-self: start;
-    max-height: fit-content;
     color: #C4A5FD;
 }
 
-.s2{
+.skillContainer2{
     display: grid;
-    grid-column: 3 /span 4;
+    grid-column: 3;
     grid-row: 2;
-    place-self: center;
-    align-self: start;
-    max-height: fit-content;
     color: #C4A5FD;
-}
-
-.skillH2{
-    grid-column: 1 / span 2;
-    place-self: center;
-    color: #f7f7f7;
-    padding: 1em;
-}
-.s1a{
-    grid-column-start: 1; 
-    list-style-type: none;
-    margin: -1em;
-    border: 0;
-    padding: 2em;
-    width: max-content;
-}
-
-.s1b{
-    grid-column-start: 2;
-    list-style-type: none;
-    margin: -1em;
-    border: 0;
-    padding: 2em;
-    width: max-content;
 }
 
 .webDesigner{
-    grid-row-start: 3;
     grid-column: 1 /span 4;
+    grid-row: 3;
     place-self: center;
 }
 
-.webDesigner img{
+.webDesigner img{  
     max-width: 100%;
     width: 20em;
     height: auto;
+    margin: 1em;
 }
 
 footer{
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: 1fr;
     background-color: #6441A5;
-    padding: 1em 5.5em;
+    padding: 0 5%;
+    
+}
+
+footer p{
+  width: auto;
+  height: auto;
+  size: auto;
 }
 
 .copyRight{
@@ -314,6 +272,72 @@ footer{
     color: #cccccc;
 }
 
-@media screen  and (max-width: 1200){
+@media (max-width: 1200px) {
+  .txt1{
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  }
+  .txt{
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  }
 
+.container3{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+
+  .skill{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+
+  .title{
+    grid-row-start: 1;
+  }
+
+  .txt img {
+    grid-column: 2 span/4;
+    place-items: center;
+  }
+
+  .txt p{
+    grid-column: 2 span/4;
+    grid-row: 2;
+    place-items: center;
+  }
+
+  .txt1 p{
+    grid-column: 2 span/4;
+    place-items: center;
+    grid-row: 3;
+  }
+
+  .slideshow-container {
+    grid-row-start: 2;
+    grid-column: 2 span/4;
+    place-items: center;
+  }
+
+  .calado1{
+    grid-row-start: 2;
+    place-items: center;
+    margin: 1em;
+  }
+
+  .calado{
+    grid-row: 3;
+    justify-self: center;
+    margin: 1em;
+  }
+
+  .skillContainer{
+    grid-column: 1/span 2;
+    grid-row: 2;
+  }
+
+  .skillContainer2{
+    grid-column: 1/span 2;
+    grid-row: 4;
+  }
 }
