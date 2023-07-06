@@ -48,3 +48,17 @@ function mobileTab() {
     x.style.display = "block";
   }
 }
+
+var TEXTS = ["FRONT-END","DEVELOPER","TALENT"];
+
+var index = 0;
+
+$(function() {
+  setInterval(function() {
+    $('#header-txt-change').fadeOut(500, function() {
+      $(this).text(TEXTS[index++]).fadeIn(500);
+      if (index === TEXTS.length)
+        index = 0
+    });
+  }, 3500);
+});

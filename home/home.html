@@ -12,22 +12,22 @@
     <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     <nav id="menuDesktop">
          <div class="home">
-            <a href="/home/home.html">HOME</a>
-        </div>
-        <div class="contact">
-            <a href="#">contact</a>
+            <a href="/home/home.html">Home</a>
         </div>
         <div class="anchor">
-            <a href="#txt1">About Me</a>
+            <a href="#txt1">About</a>
             <a href="#container3">Projects</a>
             <a href="#skill">Skills</a>
+        </div>
+        <div class="contact">
+            <a href="#">Contact</a>
         </div>
     </nav>
     <div class="mobNav">
         <a href="/home/home.html" class="active">Home</a>
         <div id="myMenu">
           <a href="#">Contact</a>
-          <a href="#txt1">About Me</a>
+          <a href="#txt1">About</a>
           <a href="#container3">Projects</a>
           <a href="#skill">Skills</a>
         </div>
@@ -36,16 +36,16 @@
         </a>
     </div>
     <main>
-        <div  class="txt" >
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ante eget metus auctor fringilla.
-                Nullam vitae ligula id neque malesuada cursus. 
-                Proin sit amet justo elit. Nulla consequat est sit amet libero scelerisque, ut sollicitudin sapien consequat.
-                Aliquam erat volutpat. Fusce ultrices lacinia dolor, eu tincidunt erat bibendum a.
-            </p>
+        <div class="txt" >
+            <div id="txt-container">            
+                <p> Welcome I am DiegoSimoura a <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+                    <div id="header-txt-change" style="position:absolute;">TALENT</div>
+                </p>
+            </div>
             <img src="/home/img/perfil.png" alt="">
         </div>
         <div id="txt1" class="txt1">
-            <h1 class="title">ABOUT ME</h1>
+            <h1 class="title">ABOUT</h1>
             <p>
                 123Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ante eget metus auctor fringilla.
                 Nullam vitae ligula id neque malesuada cursus. 
@@ -76,28 +76,28 @@
         </div>
         <div id="container3" class="container3">
             <h1 class="title">PROJECTS</h1>
-            <div class="calado1">
+            <div class="containerImg">
                 <img src="/home/test/Group 1.png" alt="">
                 <div>
                     <a href="/projetoAI/index.html">Live Demo</a>
                     <a href="https://github.com/DiegoSimoura/selfDriveCar" target="_blank">Source Code</a>
                 </div>
             </div>
-            <div class="calado1">
+            <div class="containerImg">
                 <img src="/home/test/Group 2.png" alt="">
                 <div class="testeee">
                     <a href="#">Live Demo</a>
                     <a href="#">Source Code</a>
                 </div>
             </div>
-            <div class="calado">
+            <div class="containerImg1">
                 <img src="/home/test/Group 3.png" alt="">
                 <div>
                     <a href="#">Live Demo</a>
                     <a href="#">Source Code</a>
                 </div>
             </div>
-            <div class="calado">
+            <div class="containerImg1">
                 <img src="/home/test/Group 4.png" alt="">
                 <div>
                     <a href="#">Live Demo</a>
@@ -144,5 +144,6 @@
             <p>© CopyRight 2023 DiegoSimoura. All Rights Reserved.</p>
     </footer>
     <script src="functions.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </body>
 </html>
