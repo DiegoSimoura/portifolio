@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="/AIstylesheet.css">
+    <title>DiegoSimoura</title>
+</head>
+
+<body>
+    <header>
+        <div class="home">
+            <a href="/home.html">HOME</a>
+        </div>
+    </header>
+    <main>
+        <div id="verticalButtons">
+            <button onclick="restartGame()"><span class="material-symbols-outlined">restart_alt</span></button>
+            <button onclick="save()"><span class="material-symbols-outlined"><span class="material-symbols-outlined">network_intelligence_history</span></span></button>
+            <button onclick="discard()"><span class="material-symbols-outlined">delete</span></button>
+        </div>
+        <div>
+            <canvas id="carCanvas"></canvas>
+            <canvas id="networkCanvas"></canvas>
+            <Script src="visualizer.js"></Script>
+            <Script src="network.js"></Script>
+            <Script src="sensor.js"></Script>
+            <Script src="utils.js"></Script>
+            <Script src="road.js"></Script>
+            <Script src="controls.js"></Script>
+            <Script src="car.js"></Script>
+            <Script src="script.js"></Script>
+        </div>
+    </main>
+    <footer>
+        <img class="footDesigner" src="/home/img/detalheFooter.svg" alt="">
+        <p class="copyRight">© CopyRight 2023 DiegoSimoura. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
