@@ -17,6 +17,7 @@ body{
   border: none;
   outline: none;
   background-color: #6441A5;
+  background-image: linear-gradient( to bottom, #6441a5, #9468E6 );
   color: #ffffff;
   cursor: pointer;
   padding: 1.5em;
@@ -286,7 +287,6 @@ nav{
   border-radius: 1em;
   justify-self: center;
 }
-
 .skill{
   display: grid;
   grid-template-columns: repeat(4,1fr);
@@ -344,8 +344,9 @@ footer{
   display: grid;
   grid-template-columns: 1fr;
   background-color: #6441A5;
+  background-image: linear-gradient( to bottom, #6441a5, #9468E6 );
   padding: 0 5%;
-  
+  justify-self: center;
 }
 
 footer p{
@@ -412,15 +413,15 @@ footer p{
   place-items: center;
 }
 
-.containerImg1{
-  grid-row-start: 2;
-  place-items: center;
+.containerImg{
+  grid-row: 2;
+  justify-self: center;
   margin: 1em;
 }
 
-.containerImg{
-  grid-row: 3;
-  justify-self: center;
+.containerImg1{
+  grid-row-start: 3;
+  place-items: center;
   margin: 1em;
 }
 

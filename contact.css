@@ -128,8 +128,9 @@ footer{
   display: grid;
   grid-template-columns: 1fr;
   background-color: #6441A5;
+  background-image: linear-gradient( to bottom, #6441a5, #9468E6 );
   padding: 0 5%;
-  
+  justify-self: center;
 }
 
 footer p{
