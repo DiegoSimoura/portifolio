@@ -1,0 +1,198 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  background-color: #f7f7f7;
+  height: 100%;
+}
+
+
+nav{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  height: 4em;
+  padding: 0 5%;
+  background-image: linear-gradient(to bottom,#c4a5fd, #dcc9ff );
+  max-width: 100%;
+  place-content: center;
+}
+
+.home{
+  display: grid;
+  place-self: center;
+  justify-self: start;
+  grid-column-start: 1;
+  width: max-content;
+  
+}
+
+.home a{
+  text-decoration: none;
+  color: #202020;
+  width: fit-content;
+}
+
+.home a:hover{
+  font-weight: bolder;
+}
+
+.contact {
+  text-decoration: none;
+  justify-self: end;
+  grid-column: 4;
+}
+
+.contact a{
+  text-decoration: none;
+  place-self: center;
+  color: #202020;
+  border: #6f6f6f;
+  border-style: solid;
+  padding: 0.5em;
+  border-radius: 1em;
+  border-width: thin;
+}
+
+.contact a:hover{
+  background-color: #dcc9ff;
+  font-weight: bolder;
+}
+
+.anchor{
+  display: flex;
+  place-self: center;
+  grid-column: 2/span 2;
+  grid-row: 1;
+  max-width: 100%;
+}
+
+.anchor a{
+  text-decoration: none;
+  margin: 0 0.5em;
+  color: #202020;
+  width: fit-content;
+}
+
+.anchor a:hover{
+  font-weight: bolder;
+}
+
+.mobNav {
+  overflow: hidden;
+  background-color: #dcc9ff;
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+}
+
+
+.mobNav #myMenu {
+  display: none;
+}
+
+
+.mobNav a {
+  color: #202020;
+  padding: 1.1em;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+
+.mobNav a.icon {
+  background: #C4A5FD;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 1.3em;
+}
+
+.mobNav a:hover {
+  background-color: #dcc9ff;
+  color: #202020;
+  font-weight: bolder;
+}
+
+.active {
+  background-color: #C4A5FD;
+  color: #202020;
+}
+
+/* footer */
+
+footer{
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: #6441A5;
+  padding: 0 5%;
+  
+}
+
+footer p{
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  place-self: center;
+  grid-column: 1 /span 4;
+  color: #cccccc;
+  font-size: 0.8em;
+}
+
+/* break points */
+
+@media (min-width: 512px) {
+
+  .mobNav {
+    overflow: hidden;
+    background-color: #C4A5FD;
+    background-image: linear-gradient(to bottom,#c4a5fd, #dcc9ff );
+    position: relative;
+    display: none;
+  }
+  
+  
+  .mobNav #myMenu {
+    display: none;
+  }
+  
+  
+  .mobNav a {
+    color: white;
+    padding: 0.9em 1em;
+    text-decoration: none;
+    font-size: 1em;
+    display: block;
+  }
+  
+  
+  .mobNav a.icon {
+    background: black;
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  
+  .mobNav a:hover {
+    background-color: #ddd;
+    color: #202020;
+  }
+  
+  
+  .active {
+    background-color: #C4A5FD;
+    color: white;
+  }
+  
+  }
+
+@media (max-width: 511px) {
+  #menuDesktop{
+    display: none;
+  }
+  }
