@@ -133,6 +133,7 @@ nav{
 
 .mobNav a.icon {
   background: #C4A5FD;
+  background-image: linear-gradient(to bottom,#c4a5fd, #dcc9ff );
   display: block;
   position: absolute;
   right: 0;
@@ -140,14 +141,20 @@ nav{
   height: 1.3em;
 }
 
+.icon :hover{
+  font-weight: bolder;
+}
+
 .mobNav a:hover {
   background-color: #dcc9ff;
+  background-image: linear-gradient(to bottom,#c4a5fd, #dcc9ff );
   color: #202020;
   font-weight: bolder;
 }
 
 .active {
   background-color: #C4A5FD;
+  background-image: linear-gradient(to bottom,#c4a5fd, #dcc9ff );
   color: #202020;
 }
 
