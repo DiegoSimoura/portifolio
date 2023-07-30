@@ -21,7 +21,7 @@
             <a href="#container3">Projects</a>
             <a href="#skill">Skills</a>
         </div>
-        <div class="contact">
+        <div class="anchorContact">
             <a href="#contact">Contact</a>
         </div>
     </nav>
@@ -40,9 +40,9 @@
     <main>
         <div class="txt">
             <div id="txt-container">
-                <p> Welcome I am DiegoSimoura a
+                <p> Welcome I am Diego Simoura a
                     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-                <div id="header-txt-change" style="position:absolute;">TALENT</div>
+                <div id="header-txt-change" style="position:relative;">TALENT</div>
                 </p>
             </div>
             <img src="/img/perfil.png" alt="">
@@ -138,12 +138,30 @@
                     <p>Knowledge Sharing</p>
                 </ul>
             </div>
-            <div class="contact">
-
-            </div>
             <div class="webDesigner">
                 <img src="/img/detalheFooter.svg" alt="">
             </div>
+        </div>
+        <div class="contact">
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+            </ul>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
         </div>
     </main>
     <footer>

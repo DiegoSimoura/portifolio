@@ -52,7 +52,6 @@ nav{
   justify-self: start;
   grid-column-start: 1;
   width: max-content;
-  
 }
 
 .home a{
@@ -65,13 +64,13 @@ nav{
   font-weight: bolder;
 }
 
-.contact {
+.anchorContact {
   text-decoration: none;
   justify-self: end;
   grid-column: 4;
 }
 
-.contact a{
+.anchorContact a{
   text-decoration: none;
   place-self: center;
   color: #202020;
@@ -82,7 +81,7 @@ nav{
   border-width: thin;
 }
 
-.contact a:hover{
+.anchorContact a:hover{
   background-color: #dcc9ff;
   font-weight: bolder;
 }
@@ -170,6 +169,7 @@ nav{
 
 .txt p{
   margin: 0;
+  font-size: 1.2em;
 }
 
 #txt-container{
@@ -347,6 +347,12 @@ nav{
   margin: 1em;
 }
 
+.contact{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #202020;
+}
+
 footer{
   display: grid;
   grid-template-columns: 1fr;
@@ -424,12 +430,14 @@ footer p{
   grid-row: 2;
   justify-self: center;
   margin: 1em;
+  border-radius: 0.6em;
 }
 
 .containerImg1{
   grid-row-start: 3;
   place-items: center;
   margin: 1em;
+  border-radius: 0.6em;
 }
 
 .skillContainer{
